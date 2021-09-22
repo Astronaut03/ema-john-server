@@ -15,7 +15,9 @@ app.use(cors());
 
 const port = 5000;
 
-
+app.get('/', (req, res) =>{
+  res.send("hello from db its working")
+})
 
 
 client.connect(err => {
